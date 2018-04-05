@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 import { DataService } from './data.service';
+//import { ConfigService } from './common/config.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { DataService } from './data.service';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [DataService],
+  providers: [
+    DataService,
+    //ConfigService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

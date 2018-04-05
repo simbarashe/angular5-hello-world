@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 
 import { DataService } from '../data.service';
+//import { ConfigService } from '../common/config.service';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +39,7 @@ export class HomeComponent implements OnInit {
   btnText: string = 'Add an Item';
   goalText: string = '';
   goals = [];
-
+baseUrl:string = '';
   constructor(private _data: DataService) { }
 
   ngOnInit() {
